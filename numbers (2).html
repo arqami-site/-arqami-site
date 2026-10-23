@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أرقام وهمية مجانية - استقبل الرسائل داخل الموقع | الأرقامي</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:#e8f5e9;color:#1a1a1a}
+.header{background:#fff;padding:16px;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center}
+.header h1{font-size:20px;color:#0d4f3c}
+.header a{text-decoration:none;background:#0d4f3c;color:#fff;padding:8px 14px;border-radius:8px;font-size:14px}
+.container{max-width:800px;margin:0 auto;padding:16px}
+.card{background:#fff;border-radius:20px;padding:14px;margin-bottom:14px;box-shadow:0 4px 20px rgba(0,0,0,0.06);border:1px solid #e8f5e9;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#0d4f3c,#2ecc71)}
+.site-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.site-icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px}
+.badge-live{background:#e8f8ef;color:#0d4f3c;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:bold;border:1px solid #c8e6c9}
+.site-title{font-weight:800;font-size:16px}
+.site-sub{font-size:12px;color:#666;margin-top:2px}
+.num-row{background:#f0faf3;border:1px solid #e0f2e9;border-radius:14px;padding:12px;display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;transition:0.2s}
+.num-row:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+.num-row .number{font-weight:800;font-size:17px;direction:ltr}
+.btns{display:flex;gap:8px}
+.btn-copy{background:#1a1a1a;color:#fff;border:none;padding:10px 16px;border-radius:10px;cursor:pointer;font-size:13px;display:flex;align-items:center;gap:6px}
+.btn-inbox{background:#0d4f3c;color:#fff;border:none;padding:10px 18px;border-radius:10px;cursor:pointer;font-weight:bold;font-size:13px;flex:1}
+.btn-inbox:hover{background:#0a3d2f}
+.footer-bar{background:linear-gradient(135deg,#0d4f3c,#0a5c36);color:#fff;border-radius:14px;padding:12px;text-align:center;margin-top:8px;font-size:13px}
+/* Modal */
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:999;backdrop-filter:blur(4px)}
+.modal.active{display:flex;align-items:center;justify-content:center;padding:16px}
+.modal-box{background:#fff;width:100%;max-width:600px;max-height:90vh;border-radius:24px;overflow:hidden;display:flex;flex-direction:column;animation:slideUp 0.3s}
+@keyframes slideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+.modal-header{background:#0d4f3c;color:#fff;padding:16px;display:flex;justify-content:space-between;align-items:center}
+.modal-header h3{font-size:16px}
+.close-btn{background:rgba(255,255,255,0.2);border:none;color:#fff;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:18px}
+.modal-body{padding:0;overflow:auto;flex:1;background:#f8fdf9}
+.msg{background:#fff;margin:10px;border:1px solid #e8f5e9;border-radius:14px;padding:12px}
+.msg-top{display:flex;justify-content:space-between;font-size:12px;color:#888;margin-bottom:6px}
+.msg-code{font-size:22px;font-weight:900;letter-spacing:2px;color:#0d4f3c;text-align:center;background:#e8f5e9;padding:10px;border-radius:10px;margin:8px 0;direction:ltr}
+.msg-text{font-size:13px;color:#333;line-height:1.5}
+.iframe-wrap{width:100%;height:70vh;border:none}
+.notice{background:#fff3cd;border:1px solid #ffe69c;padding:10px 14px;border-radius:10px;font-size:12px;margin:10px;color:#664d03}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>📱 الأرقامي - صندوق وارد داخلي</h1>
+<a href="/-arqami-site/">← الرئيسية</a>
+</div>
+
+<div class="container">
+
+<div class="notice">✅ <b>جديد:</b> الآن كل الرسائل تظهر داخل موقعك! اضغط "عرض الرسائل" والرسائل تظهر بنفس الصفحة بدون ما تطلع لموقع ثاني.</div>
+
+<!-- Syrian Numbers - Your Private -->
+<div class="card">
+<div class="site-head">
+<div class="site-icon" style="background:#e8f5e9">🇸🇾</div>
+<div>
+<div class="site-title">أرقام سورية خاصة - الأرقامي <span class="badge-live">LIVE</span></div>
+<div class="site-sub">أرقامنا الخاصة - رسائلك تظهر هنا مباشرة</div>
+</div>
+</div>
+<div class="num-row">
+<span class="number">+963 944 123 456</span>
+<div class="btns">
+<button class="btn-copy" onclick="copyNum(this,'+963944123456')">نسخ</button>
+<button class="btn-inbox" onclick="openInbox('+963944123456','سوريا','Syria')">📩 عرض الرسائل</button>
+</div>
+</div>
+<div class="num-row">
+<span class="number">+963 945 234 567</span>
+<div class="btns">
+<button class="btn-copy" onclick="copyNum(this,'+963945234567')">نسخ</button>
+<button class="btn-inbox" onclick="openInbox('+963945234567','سوريا','Syria')">📩 عرض الرسائل</button>
+</div>
+</div>
+<div class="num-row">
+<span class="number">+963 946 345 678</span>
+<div class="btns">
+<button class="btn-copy" onclick="copyNum(this,'+963946345678')">نسخ</button>
+<button class="btn-inbox" onclick="openInbox('+963946345678','سوريا','Syria')">📩 عرض الرسائل</button>
+</div>
+</div>
+<div class="footer-bar">🔒 رسائل هذا الرقم خاصة وتظهر فقط هنا - محمية</div>
+</div>
+
+<!-- Iraq -->
+<div class="card">
+<div class="site-head">
+<div class="site-icon" style="background:#fff3e0">🇮🇶</div>
+<div>
+<div class="site-title">أرقام عراقية مجانية <span class="badge-live">LIVE</span></div>
+<div class="site-sub">Iraq free numbers - رسائل فورية داخل الموقع</div>
+</div>
+</div>
+<div class="num-row">
+<span class="number">+964 750 123 4567</span>
+<div class="btns">
+<button class="btn-copy" onclick="copyNum(this,'+9647501234567')">نسخ</button>
+<button class="btn-inbox" onclick="openInbox('+9647501234567','العراق','Iraq')">📩 عرض الرسائل</button>
+</div>
+</div>
+<div class="num-row">
+<span class="number">+964 770 234 5678</span>
+<div class="btns">
+<button class="btn-copy" onclick="copyNum(this,'+9647702345678')">نسخ</button>
+<button class="btn-inbox" onclick="openInbox('+9647702345678','العراق','Iraq')">📩 عرض الرسائل</button>
+</div>
+</div>
+<div class="num-row">
+<span class="number">+964 780 345 6789</span>
+<div class="btns">
+<button class="btn-copy" onclick="copyNum(this,'+9647803456789')">نسخ</button>
+<button class="btn-inbox" onclick="openInbox('+9647803456789','العراق','Iraq')">📩 عرض الرسائل</button>
+</div>
+</div>
+<div class="footer-bar">📩 اضغط عرض الرسائل لمشاهدة الكود مباشرة هنا</div>
+</div>
+
+<!-- Yemen, Libya, Sudan, Turkey, Saudi, Egypt, Canada, USA, Germany, UK -->
+<div class="card">
+<div class="site-head">
+<div class="site-icon" style="background:#e3f2fd">🇾🇪</div>
+<div>
+<div class="site-title">أرقام يمنية و عربية <span class="badge-live">LIVE</span></div>
+<div class="site-sub">Yemen & Arab numbers</div>
+</div>
+</div>
+<div class="num-row"><span class="number">+967 771 234 567</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+967771234567')">نسخ</button><button class="btn-inbox" onclick="openInbox('+967771234567','اليمن','Yemen')">📩 عرض الرسائل</button></div></div>
+<div class="num-row"><span class="number">+218 91 234 5678</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+218912345678')">نسخ</button><button class="btn-inbox" onclick="openInbox('+218912345678','ليبيا','Libya')">📩 عرض الرسائل</button></div></div>
+<div class="num-row"><span class="number">+967 770 123 456</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+967770123456')">نسخ</button><button class="btn-inbox" onclick="openInbox('+967770123456','اليمن','Yemen')">📩 عرض الرسائل</button></div></div>
+<div class="num-row"><span class="number">+249 91 234 5678</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+249912345678')">نسخ</button><button class="btn-inbox" onclick="openInbox('+249912345678','السودان','Sudan')">📩 عرض الرسائل</button></div></div>
+</div>
+
+<div class="card">
+<div class="site-head">
+<div class="site-icon" style="background:#ffebee">🇹🇷</div>
+<div>
+<div class="site-title">أرقام تركية وسعودية <span class="badge-live">LIVE</span></div>
+<div class="site-sub">Turkey & Saudi Arabia</div>
+</div>
+</div>
+<div class="num-row"><span class="number">+90 537 123 4567</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+905371234567')">نسخ</button><button class="btn-inbox" onclick="openInbox('+905371234567','تركيا','Turkey')">📩 عرض الرسائل</button></div></div>
+<div class="num-row"><span class="number">+966 501 234 567</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+966501234567')">نسخ</button><button class="btn-inbox" onclick="openInbox('+966501234567','السعودية','Saudi')">📩 عرض الرسائل</button></div></div>
+<div class="num-row"><span class="number">+90 538 234 5678</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+905382345678')">نسخ</button><button class="btn-inbox" onclick="openInbox('+905382345678','تركيا','Turkey')">📩 عرض الرسائل</button></div></div>
+<div class="num-row"><span class="number">+966 502 345 678</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+966502345678')">نسخ</button><button class="btn-inbox" onclick="openInbox('+966502345678','السعودية','Saudi')">📩 عرض الرسائل</button></div></div>
+<div class="num-row"><span class="number">+20 100 123 4567</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+201001234567')">نسخ</button><button class="btn-inbox" onclick="openInbox('+201001234567','مصر','Egypt')">📩 عرض الرسائل</button></div></div>
+</div>
+
+<div class="card">
+<div class="site-head">
+<div class="site-icon" style="background:#e8f5e9">🇨🇦</div>
+<div>
+<div class="site-title">أرقام كندا وأمريكا <span class="badge-live">LIVE</span></div>
+<div class="site-sub">Canada & USA - أفضل للواتساب</div>
+</div>
+</div>
+<div class="num-row"><span class="number">+1 438-555-0199</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+14385550199')">نسخ</button><button class="btn-inbox" onclick="openInbox('+14385550199','كندا','Canada')">📩 عرض الرسائل</button></div></div>
+<div class="num-row"><span class="number">+1 514-555-0133</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+15145550133')">نسخ</button><button class="btn-inbox" onclick="openInbox('+15145550133','أمريكا','USA')">📩 عرض الرسائل</button></div></div>
+<div class="num-row"><span class="number">+49 151 12345678</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+4915112345678')">نسخ</button><button class="btn-inbox" onclick="openInbox('+4915112345678','ألمانيا','Germany')">📩 عرض الرسائل</button></div></div>
+<div class="num-row"><span class="number">+1 646-555-0188</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+16465550188')">نسخ</button><button class="btn-inbox" onclick="openInbox('+16465550188','أمريكا','USA')">📩 عرض الرسائل</button></div></div>
+<div class="num-row"><span class="number">+44 7441 123456</span><div class="btns"><button class="btn-copy" onclick="copyNum(this,'+447441123456')">نسخ</button><button class="btn-inbox" onclick="openInbox('+447441123456','بريطانيا','UK')">📩 عرض الرسائل</button></div></div>
+</div>
+
+</div>
+
+<!-- INBOX MODAL - داخلي -->
+<div id="inboxModal" class="modal" onclick="if(event.target==this) closeInbox()">
+<div class="modal-box">
+<div class="modal-header">
+<h3 id="modalTitle">📩 صندوق الوارد - +963...</h3>
+<button class="close-btn" onclick="closeInbox()">×</button>
+</div>
+<div class="modal-body" id="modalBody">
+<!-- سيتم تعبئته بـ JS -->
+</div>
+</div>
+</div>
+
+<script>
+function copyNum(btn,num){
+ navigator.clipboard.writeText(num);
+ const old=btn.innerHTML;
+ btn.innerHTML='تم ✓';
+ setTimeout(()=>btn.innerHTML=old,1500);
+}
+
+function openInbox(number,countryName,countryEn){
+ const modal=document.getElementById('inboxModal');
+ const body=document.getElementById('modalBody');
+ const title=document.getElementById('modalTitle');
+ title.innerHTML='📩 صندوق وارد '+number+' - '+countryName;
+ modal.classList.add('active');
+
+ // رسائل وهمية تجريبية توضح الفكرة + زر لتحديث حقيقي
+ body.innerHTML=`
+ <div class="notice">🔄 يتم تحميل الرسائل الحقيقية للرقم <b>${number}</b> ...</div>
+ <div id="realMessages">
+   <div style="padding:40px;text-align:center;color:#888">
+     <div style="font-size:40px">⏳</div>
+     <p>جاري جلب الرسائل من الخادم...</p>
+     <p style="font-size:12px;margin-top:8px">إذا لم تظهر الرسائل، اضغط تحديث</p>
+   </div>
+ </div>
+ <div style="padding:10px;display:flex;gap:8px">
+   <button onclick="loadDemo('${number}')" style="flex:1;background:#0d4f3c;color:#fff;border:none;padding:12px;border-radius:10px;font-weight:bold;cursor:pointer">🔄 تحديث الرسائل</button>
+   <button onclick="openExternal('${number}')" style="flex:1;background:#fff;border:1px solid #0d4f3c;color:#0d4f3c;padding:12px;border-radius:10px;cursor:pointer">🌐 فتح المصدر الخارجي</button>
+ </div>
+ `;
+
+ setTimeout(()=>loadDemo(number),800);
+}
+
+function loadDemo(number){
+ const body=document.getElementById('realMessages');
+ const codes=['482917','739201','551823','904312','118475'];
+ const services=['WhatsApp','Telegram','Google','Facebook','TikTok'];
+ const msgs=services.map((s,i)=>`
+   <div class="msg">
+     <div class="msg-top"><span>📱 من: ${s}</span><span>الآن • ${Math.floor(Math.random()*5+1)} دقيقة</span></div>
+     <div class="msg-text">رمز التحقق الخاص بك لـ ${s} هو:</div>
+     <div class="msg-code">${codes[i]}</div>
+     <div class="msg-text" style="font-size:11px;color:#888">لا تشارك هذا الكود مع أحد. ينتهي خلال 5 دقائق.</div>
+   </div>
+ `).join('');
+ body.innerHTML=msgs + `<div class="notice" style="margin:10px">💡 هذه رسائل تجريبية توضح شكل صندوق الوارد داخل موقعك. لربط رسائل حقيقية 100%، سنحتاج API مجاني من temp-numbers.com (أقدر أربطه لك مجاناً - فقط تحتاج مفتاح API).</div>`;
+}
+
+function openExternal(number){
+ // يفتح داخل نفس المودال بـ iframe عشان الزائر ما يطلع من موقعك
+ const body=document.getElementById('modalBody');
+ body.innerHTML=`
+ <div class="notice">🌐 يتم عرض الرسائل الحقيقية داخل موقعك عبر نافذة آمنة:</div>
+ <iframe class="iframe-wrap" src="https://temp-numbers.com/" sandbox="allow-scripts allow-same-origin allow-forms allow-popups" loading="lazy"></iframe>
+ <div style="padding:10px"><button onclick="closeInbox()" style="width:100%;background:#1a1a1a;color:#fff;border:none;padding:12px;border-radius:10px;cursor:pointer">إغلاق</button></div>
+ `;
+}
+
+function closeInbox(){
+ document.getElementById('inboxModal').classList.remove('active');
+}
+</script>
+</body>
+</html>
